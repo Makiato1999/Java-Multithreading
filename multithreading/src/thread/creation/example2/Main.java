@@ -87,6 +87,27 @@ public class Main {
     }
 
     private static class PoliceThread extends Thread {
+        public PoliceThread() {
+            this.setName(this.getClass().getSimpleName());
+        }
+
+        /**
+         *  The start() method is responsible for starting a new thread of execution.
+         *  When you call start(), it creates a new thread in the Java Virtual Machine (JVM)
+         *  and runs the code in that new thread, allowing the concurrent execution of tasks.
+         */
+        @Override
+        public void start() {
+            System.out.println("Starting thread "+this.getName());
+            super.start();
+        }
+
+        /**
+         *  The run() method can be called directly just like a normal method.
+         *  However, if you call run() directly without using start(),
+         *  it will not create a new thread—instead, it will execute in the current thread,
+         *  just like any other method call.
+         */
         @Override
         public void run() {
             for (int i = 10; i > 0; i--) {
