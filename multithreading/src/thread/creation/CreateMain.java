@@ -1,10 +1,10 @@
-package thread.creation.example2;
+package thread.creation;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Main {
+public class CreateMain {
     public static final int MAX_PASSWORD = 9999;
 
     public static void main(String[] args) {
