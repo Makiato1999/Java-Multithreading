@@ -20,3 +20,13 @@ Multithreading, Concurrency &amp; Parallel programming in Java
 2. Trade-offs: There is often a trade-off between latency and throughput:
     - Increasing throughput might involve processing tasks in bulk, which could increase the latency for individual tasks.
     - Reducing latency often means ensuring individual tasks are executed faster, but this may reduce the overall throughput if fewer tasks are executed concurrently.
+
+## Stack
+1. All variables belong to the thread executing on that stack
+2. Statically allocated when the thread is created
+3. The stack's size is fixed, and relatively small (platform specific)
+4. If our calling hierarchy is too deep, we may get an StackOverflow Exception. (Risky with recursive calls)
+
+## Stack and Heap
+1. stack (exclusive): local primitive types, local references
+2. heap (shared): objects, class members, static variables
