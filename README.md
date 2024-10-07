@@ -31,4 +31,8 @@ Multithreading, Concurrency &amp; Parallel programming in Java
 1. stack (exclusive): local primitive types, local references
 2. heap (shared): objects, class members, static variables
 
-## Race Condition
+## Concurrency
+- two threads sharing the items counter
+- both threads are reading and modifying that counter in the same time
+- the operation were not atomic
+
