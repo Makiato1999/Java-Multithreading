@@ -1,4 +1,4 @@
-package thread.race.condition;
+package thread.race.condition.non.operations;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
